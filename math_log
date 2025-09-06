@@ -1,1 +1,47 @@
+Saturday 6th September:
+
+A. Conditional probability
+1) A box has 6 red, 4 blue. Draw 2 without replacement. What’s P(2nd is red | 1st is blue)?
+
+P = 6/9 = 2/3 = 66.66%
+
+2)Roll two fair dice. Given the sum is 8, what’s P(at least one die is 5)?
+
+tot combinations for 8:
+2 and 6
+3 and 5
+4 and 4 
+coonsidering permutations = 6 
+favourable = 2 
+
+P(die is 5 | sum is 8) = 2/6 = 33.33%
+
+
+3)Pick a random integer uniformly from {1,…,100}. Given it’s even, what’s P(it’s divisible by 3)?
+
+avery third number is divisible by 3 from 1 to 99 so 33 numners are divisible by 3 
+
+P(it’s divisible by 3) = 33/100 = 33.00%
+
+4)An urn has 4 black, 3 white. Draw 3 without replacement. What’s P(exactly 2 white | first draw was black)?
+
+P(exactly 2 white | first draw was black) = P(white|black)*P(white|black,white)
+
+P = 4/6 * 3/5 = 2/5 = 40% 
+
+
+B. Bayes’ rule
+5) Disease prevalence 1%. Test: 95% sensitivity, 96% specificity. You test positive. What’s P(disease | +)?
+
+6) Two coins: C₁ fair, C₂ biased with P(H)=0.8. Pick a coin uniformly at random and toss 3 times. Sequence: HHT. What’s P(you picked C₂ | HHT)?
+
+7) Two boxes: B₁ has 2 red, 1 blue; B₂ has 1 red, 2 blue. Choose a box uniformly, draw one ball: it’s red. What’s P(B₁ | red)?
+
+
+C. (Law of) Total expectation 
+8) Let N ~ Poisson(λ=3). Given N=n, you observe i.i.d. purchases X₁,…,Xₙ with E[X]=20. Define total spend T=∑Xᵢ (T=0 if N=0). Compute E[T]. (Use total expectation.)
+
+9) Parameter mixing: with prob 0.4 choose distribution A: XNormal(μ=0,σ=1); with prob 0.6 choose B: XNormal(μ=2,σ=1). What is E[X] and Var(X)? (Use law of total expectation/variance.)
+
+10) Urn process: First choose K ~ Uniform{1,2,3}. Then place K red and K blue balls into an urn (total 2K). Draw one ball uniformly. Compute P(red) and E[Indicator(red)] via total expectation.
 
